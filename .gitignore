@@ -1,0 +1,11 @@
+*.blend1
+*.blend2
+*.pur
+__pycache__/
+Thumbs.db
+desktop.ini
+
+# Local-only reference images (copyrighted game art you collect yourself)
+_reference/private/*
+!_reference/private/.gitkeep
+!_reference/private/README.md
