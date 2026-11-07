@@ -2,8 +2,8 @@
 CRD-7X -- Extended Burst. Attachment build script for Blender 5.x.
 
 Run:  blender --background --python CRD-7X_build.py -- <ICS-Models root>
-Needs: compliance/CRD-7/CRD-7.blend (run CRD-7_build.py first; it holds the mount empty).
-Writes: attachments/CRD-7X/CRD-7X.blend, exports/CRD-7X.fbx, attachments/CRD-7X/previews/*.png
+Needs: Weapon Models/compliance/CRD-7/CRD-7.blend (run CRD-7_build.py first; it holds the mount empty).
+Writes: Weapon Models/attachments/CRD-7X/CRD-7X.blend, Weapon Models/exports/CRD-7X.fbx, Weapon Models/attachments/CRD-7X/previews/*.png
 Spec:   _specs/CRD-7X.md
 
 The part is the ACS-9 focusing ring (22 mm outer, brushed aluminium) plus the epoxy
@@ -21,10 +21,10 @@ ROOT = sys.argv[sys.argv.index("--") + 1]
 sys.path.insert(0, os.path.join(ROOT, "_shared"))
 import studio  # noqa: E402
 
-OUT = os.path.join(ROOT, "attachments", "CRD-7X")
+OUT = os.path.join(ROOT, "Weapon Models", "attachments", "CRD-7X")
 PREVIEW_DIR = os.path.join(OUT, "previews")
-EXPORT_DIR = os.path.join(ROOT, "exports")
-BASE_BLEND = os.path.join(ROOT, "compliance", "CRD-7", "CRD-7.blend")
+EXPORT_DIR = os.path.join(ROOT, "Weapon Models", "exports")
+BASE_BLEND = os.path.join(ROOT, "Weapon Models", "compliance", "CRD-7", "CRD-7.blend")
 os.makedirs(PREVIEW_DIR, exist_ok=True)
 os.makedirs(EXPORT_DIR, exist_ok=True)
 

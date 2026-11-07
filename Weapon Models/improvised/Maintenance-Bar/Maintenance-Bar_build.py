@@ -2,8 +2,8 @@
 Maintenance-Bar -- 45 cm length of ICS structural rebar. Build script for Blender 5.x.
 
 Run:  blender --background --python Maintenance-Bar_build.py -- <ICS-Models root>
-Writes: improvised/Maintenance-Bar/Maintenance-Bar.blend, textures/*.png,
-        exports/Maintenance-Bar.fbx, improvised/Maintenance-Bar/previews/*.png
+Writes: Weapon Models/improvised/Maintenance-Bar/Maintenance-Bar.blend, textures/*.png,
+        Weapon Models/exports/Maintenance-Bar.fbx, Weapon Models/improvised/Maintenance-Bar/previews/*.png
 Spec:   _specs/Maintenance-Bar.md
 
 Raw look: not an ICS product. No logo, no label, no rounded finish.
@@ -23,10 +23,10 @@ ROOT = sys.argv[sys.argv.index("--") + 1]
 sys.path.insert(0, os.path.join(ROOT, "_shared"))
 import studio  # noqa: E402
 
-OUT = os.path.join(ROOT, "improvised", "Maintenance-Bar")
+OUT = os.path.join(ROOT, "Weapon Models", "improvised", "Maintenance-Bar")
 TEX_DIR = os.path.join(OUT, "textures")
 PREVIEW_DIR = os.path.join(OUT, "previews")
-EXPORT_DIR = os.path.join(ROOT, "exports")
+EXPORT_DIR = os.path.join(ROOT, "Weapon Models", "exports")
 for d in (TEX_DIR, PREVIEW_DIR, EXPORT_DIR):
     os.makedirs(d, exist_ok=True)
 

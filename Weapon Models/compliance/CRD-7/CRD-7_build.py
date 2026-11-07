@@ -2,7 +2,7 @@
 CRD-7 -- Compliance Restraint Device. Build script for Blender 5.x.
 
 Run:  blender --background --python CRD-7_build.py -- <ICS-Models root>
-Writes: compliance/CRD-7/CRD-7.blend, exports/CRD-7.fbx, compliance/CRD-7/previews/*.png
+Writes: Weapon Models/compliance/CRD-7/CRD-7.blend, Weapon Models/exports/CRD-7.fbx, Weapon Models/compliance/CRD-7/previews/*.png
 Spec:   _specs/CRD-7.md   Canon: ICS-Writing/canon/weapons/compliance/CRD-7 ...md
 
 Units: metres. Forward = -Y (the prongs). Up = +Z. Origin = centre of the grip.
@@ -18,8 +18,8 @@ import bpy
 from mathutils import Matrix, Vector
 
 ROOT = sys.argv[sys.argv.index("--") + 1]
-PREVIEW_DIR = os.path.join(ROOT, "compliance", "CRD-7", "previews")
-EXPORT_DIR = os.path.join(ROOT, "exports")
+PREVIEW_DIR = os.path.join(ROOT, "Weapon Models", "compliance", "CRD-7", "previews")
+EXPORT_DIR = os.path.join(ROOT, "Weapon Models", "exports")
 os.makedirs(PREVIEW_DIR, exist_ok=True)
 os.makedirs(EXPORT_DIR, exist_ok=True)
 
@@ -287,7 +287,7 @@ for o in sorted(geo, key=lambda o: -len(o.data.polygons))[:6]:
     print("  ", o.name, sum(len(p.vertices) - 2 for p in o.data.polygons))
 
 # ---- save and export --------------------------------------------------------
-bpy.ops.wm.save_as_mainfile(filepath=os.path.join(ROOT, "compliance", "CRD-7", "CRD-7.blend"))
+bpy.ops.wm.save_as_mainfile(filepath=os.path.join(ROOT, "Weapon Models", "compliance", "CRD-7", "CRD-7.blend"))
 bpy.ops.object.select_all(action="DESELECT")
 for o in [root] + geo + [o for o in coll.objects if o.name.startswith("mount_")]:
     o.select_set(True)

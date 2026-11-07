@@ -38,7 +38,7 @@ None. The quarter-turn release is a canon mechanic, not a model animation.
 Game mesh: **132 triangles** (sleeve and two leads, 3 parts). Spec target was under 100. Texture: the indicator uses the same emissive material.
 
 ## Export
-`exports/CRD-7R.fbx`: root empty `CRD-7R` and sleeve. Source `attachments/CRD-7R/CRD-7R.blend`, built by `attachments/CRD-7R/CRD-7R_build.py`. Previews in `attachments/CRD-7R/previews/` show the CRD-7R with the warm indicator.
+`Weapon Models/exports/CRD-7R.fbx`: root empty `CRD-7R` and sleeve. Source `Weapon Models/attachments/CRD-7R/CRD-7R.blend`, built by `Weapon Models/attachments/CRD-7R/CRD-7R_build.py`. Previews in `Weapon Models/attachments/CRD-7R/previews/` show the CRD-7R with the warm indicator.
 
 ## Open questions
 1. **Port visibility.** Canon says the sleeve is visible "if you look", so it is modelled as a visible window, not a hidden part. Author to confirm.

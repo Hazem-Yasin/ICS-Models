@@ -2,8 +2,8 @@
 CRD-7R -- Compliance Reversal. Attachment build script for Blender 5.x.
 
 Run:  blender --background --python CRD-7R_build.py -- <ICS-Models root>
-Needs: compliance/CRD-7/CRD-7.blend (run CRD-7_build.py first; it holds the mount empty).
-Writes: attachments/CRD-7R/CRD-7R.blend, exports/CRD-7R.fbx, attachments/CRD-7R/previews/*.png
+Needs: Weapon Models/compliance/CRD-7/CRD-7.blend (run CRD-7_build.py first; it holds the mount empty).
+Writes: Weapon Models/attachments/CRD-7R/CRD-7R.blend, Weapon Models/exports/CRD-7R.fbx, Weapon Models/attachments/CRD-7R/previews/*.png
 Spec:   _specs/CRD-7R.md
 
 Canon: the CRD-7R "looks mostly the same". The one visible change is the heatshrink
@@ -23,10 +23,10 @@ ROOT = sys.argv[sys.argv.index("--") + 1]
 sys.path.insert(0, os.path.join(ROOT, "_shared"))
 import studio  # noqa: E402
 
-OUT = os.path.join(ROOT, "attachments", "CRD-7R")
+OUT = os.path.join(ROOT, "Weapon Models", "attachments", "CRD-7R")
 PREVIEW_DIR = os.path.join(OUT, "previews")
-EXPORT_DIR = os.path.join(ROOT, "exports")
-BASE_BLEND = os.path.join(ROOT, "compliance", "CRD-7", "CRD-7.blend")
+EXPORT_DIR = os.path.join(ROOT, "Weapon Models", "exports")
+BASE_BLEND = os.path.join(ROOT, "Weapon Models", "compliance", "CRD-7", "CRD-7.blend")
 os.makedirs(PREVIEW_DIR, exist_ok=True)
 os.makedirs(EXPORT_DIR, exist_ok=True)
 

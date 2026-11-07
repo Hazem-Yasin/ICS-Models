@@ -5,7 +5,7 @@
 **Acquired:** Found. Pulled from a loose bracket in the maintenance corridor within the first hour.
 **Base tool:** none. It is the base for BAR-FL (Fragment Launcher).
 **Look:** raw. It is ICS structural rebar, not an ICS product: no logo, no label, no rounded finish.
-**Status:** modelled v1. Build script `improvised/Maintenance-Bar/Maintenance-Bar_build.py`; 672 triangles; grip pivot 10 cm from the bent end; bent end rises 24 degrees [PROPOSAL]; sheared end cut at 25 degrees [PROPOSAL]; rib pitch 7 mm [PROPOSAL].
+**Status:** modelled v1. Build script `Weapon Models/improvised/Maintenance-Bar/Maintenance-Bar_build.py`; 672 triangles; grip pivot 10 cm from the bent end; bent end rises 24 degrees [PROPOSAL]; sheared end cut at 25 degrees [PROPOSAL]; rib pitch 7 mm [PROPOSAL].
 
 ## Silhouette
 A plain straight bar with ribbed rebar surface and two cut ends, one freshly sheared, one with a bracket-bent kink.
@@ -32,7 +32,7 @@ None. First-person hold: single hand grip near one end.
 Under 1,500 triangles. One 1024 px texture set (albedo, normal, roughness).
 
 ## Export
-`exports/Maintenance-Bar.fbx`
+`Weapon Models/exports/Maintenance-Bar.fbx`
 
 ## Open questions
 1. **Where it is found.** The file says "Level 0 maintenance corridor" in the header and "Level 2 maintenance corridor" in the body. Not a modelling problem, but the author should settle it.

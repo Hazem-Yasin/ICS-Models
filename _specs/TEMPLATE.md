@@ -29,7 +29,7 @@ Moving parts, first-person hand pose, any glow or screen.
 Triangles (first person, hero): ____ . Texture set: ____ px.
 
 ## Export
-`exports/<ID>.fbx`
+`Weapon Models/exports/<ID>.fbx`
 
 ## Open questions
 Anything canon leaves open or contradicts. Mark invented details [PROPOSAL].

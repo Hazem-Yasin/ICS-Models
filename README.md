@@ -8,12 +8,13 @@ Start here: `canon/weapons/OVERVIEW.md` in ICS-Writing, then the spec brief for 
 
 | Folder | Holds |
 |---|---|
-| `compliance/` | ICS-issued tools: ACS-9, CCN-Spoofer, CRD-7, EIMU-Jammer, PTKW-Baton |
-| `improvised/` | Maintenance-Bar, Pressurized-Pipe-Tool, Olfactory-Canister, AIDEN-Unit |
-| `found/` | Level-0-Device, Rania-Hatch-Kit, Yusra-Cache |
-| `attachments/` | Modifications, built as parts that mount on a base tool (see below) |
+| `Weapon Models/` | Everything for weapons and tools. List of all 20 items: `Weapon Models/WEAPONS.md`. Holds the five folders below |
+| `Weapon Models/compliance/` | ICS-issued tools: ACS-9, CCN-Spoofer, CRD-7, EIMU-Jammer, PTKW-Baton |
+| `Weapon Models/improvised/` | Maintenance-Bar, Pressurized-Pipe-Tool, Olfactory-Canister, AIDEN-Unit |
+| `Weapon Models/found/` | Level-0-Device, Rania-Hatch-Kit, Yusra-Cache |
+| `Weapon Models/attachments/` | Modifications, built as parts that mount on a base tool (see below) |
 | `_shared/` | Materials, wear textures, hand/grip reference, scale reference (1.80 m player) |
-| `exports/` | Game-ready FBX/GLB, one per item. Never edit by hand. |
+| `Weapon Models/exports/` | Game-ready FBX/GLB, one per item. Never edit by hand. |
 | `_specs/` | One brief per item, plus `TEMPLATE.md` |
 
 ## Conventions

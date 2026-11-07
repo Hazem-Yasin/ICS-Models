@@ -38,7 +38,7 @@ None. The ring does not move, and nothing on it lights up.
 Game mesh: **880 triangles** (ring and epoxy bead, 2 parts). Spec target was under 500; the 40-segment revolve is denser than needed and can be halved. Texture: none (flat material).
 
 ## Export
-`exports/CRD-7X.fbx`: root empty `CRD-7X` and ring. Source `attachments/CRD-7X/CRD-7X.blend`, built by `attachments/CRD-7X/CRD-7X_build.py`. The build also renders the ring attached to the CRD-7 in `attachments/CRD-7X/previews/`.
+`Weapon Models/exports/CRD-7X.fbx`: root empty `CRD-7X` and ring. Source `Weapon Models/attachments/CRD-7X/CRD-7X.blend`, built by `Weapon Models/attachments/CRD-7X/CRD-7X_build.py`. The build also renders the ring attached to the CRD-7 in `Weapon Models/attachments/CRD-7X/previews/`.
 
 ## Open questions
 1. **Ring size.** Canon gives 22 mm and also says the ring matches the 15 mm aperture. The model uses 22 mm outer and 15 mm bore. Author to rule.
