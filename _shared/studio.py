@@ -84,11 +84,11 @@ def setup(scene, floor_z, res=(1500, 1000), samples=48):
     return Cam(scene)
 
 
-def append_base(scene, blend_path):
-    """Append every object of the CRD-7 base into the scene (copies, not links)."""
+def append_base(scene, blend_path, prefixes=("CRD-7", "mount_")):
+    """Append every object of a base tool into the scene (copies, not links). Pass prefixes=("ACS-9", "mount_") for the ACS-9."""
     with bpy.data.libraries.load(blend_path, link=False) as (src, dst):
         # parts and mount empties only; the base file also holds its own studio, lights and camera
-        dst.objects = [n for n in src.objects if n.startswith(("CRD-7", "mount_"))]
+        dst.objects = [n for n in src.objects if n.startswith(tuple(prefixes))]
     for ob in dst.objects:
         if ob is not None:
             scene.collection.objects.link(ob)

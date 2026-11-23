@@ -2,7 +2,7 @@
 
 3D models for *ICS: Interplanetary Corporate Solutions*. Canon lives in the sibling repo `ICS-Writing`; this repo holds only the art made from it. When the two disagree, canon wins.
 
-Start here: `canon/weapons/OVERVIEW.md` in ICS-Writing, then the spec brief for the item in `_specs/`.
+Start here: `canon/weapons/OVERVIEW.md` in ICS-Writing, then the spec brief for the item in `_specs/`. How the models are built, and the lessons so far, are in `HANDOVER.md`.
 
 ## Layout
 
@@ -13,6 +13,7 @@ Start here: `canon/weapons/OVERVIEW.md` in ICS-Writing, then the spec brief for 
 | `Weapon Models/improvised/` | Maintenance-Bar, Pressurized-Pipe-Tool, Olfactory-Canister, AIDEN-Unit |
 | `Weapon Models/found/` | Level-0-Device, Rania-Hatch-Kit, Yusra-Cache |
 | `Weapon Models/attachments/` | Modifications, built as parts that mount on a base tool (see below) |
+| `Logo/` | The ICS Earth Branch logo and brand kit: geometry source, SVG/PNG exports, seal, emblem, fonts. Start at `Logo/BRAND_MARK.md` |
 | `_shared/` | Materials, wear textures, hand/grip reference, scale reference (1.80 m player) |
 | `Weapon Models/exports/` | Game-ready FBX/GLB, one per item. Never edit by hand. |
 | `_specs/` | One brief per item, plus `TEMPLATE.md` |
